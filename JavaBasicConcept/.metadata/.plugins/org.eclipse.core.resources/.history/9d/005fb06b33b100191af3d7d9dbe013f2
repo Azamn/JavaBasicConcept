@@ -1,0 +1,8 @@
+package JavaLambda;
+
+public class lambdaApp {
+	public static void main(String args[]) {
+		
+	}
+
+}

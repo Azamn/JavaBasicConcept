@@ -1,0 +1,12 @@
+package JavaLambda;
+
+interface Calculator{
+	
+}
+
+public class lmbdaMethodRefeences {
+	public static void main(String args[]) {
+		
+	}
+
+}

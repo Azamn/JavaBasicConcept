@@ -40,7 +40,6 @@ class Company{
 	}
 }
 
-
 public class FrontOffice {
 	public static void main(String args[]) {
 		
@@ -54,5 +53,4 @@ public class FrontOffice {
 			System.out.println(emp);
 		}
 	}
-
 }

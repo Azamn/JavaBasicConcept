@@ -1,0 +1,47 @@
+package JavaLambda;
+
+@FunctionalInterface  // Annotation
+interface cab{ // when an interface will have exactly 1 abstract method we can say it as a Functional Interface
+	//void bookCab() // 
+	//void bookCab(String source , String destination); //by default public abstract void bookCab();
+	double bookCab(String source , String destination); //by default public abstract void bookCab();
+	
+}
+
+//class uberX implements cab{
+//	public void bookCab() {
+//		System.out.println("UberX Booked  !! Arriving Soon..!");
+//	}
+//}
+
+public class lambdaApp {
+	public static void main(String args[]) {
+	
+		// 1st way to implement
+//		cab cab = new uberX();
+//		cab.bookCab();
+		
+		//2nd way to implement
+		// Anonymous Class implementation
+//		cab cab = new cab() { 
+//			
+//			@Override
+//			public void bookCab() {
+//				// TODO Auto-generated method stub
+//				System.out.println("UberX Booked  !! Ariving Soon..!");
+//			}
+//		};
+		
+		//cab.bookCab();
+		
+		// 3.
+		// using a lambda Expression -> ONly works on functional programming
+		
+		cab Cab = (source, destination)->{
+			System.out.println("Uberx booked from "+source+" to "+destination+"..!");
+		};
+		
+		Cab.bookCab("Pnavel","Andheri");
+	}
+
+}

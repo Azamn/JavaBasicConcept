@@ -1,0 +1,22 @@
+package JavaLambda;
+
+@FunctionalInterface  // anotation
+interface cab{ // when an interface will have exactly 1 abstract method we can say it as a Functional Interface
+	void bookCab(); //by default public abstract void bookCab();
+		
+}
+
+class uberX implements cab{
+	public void bookCab() {
+		System.out.println("uberX Booked  !! Ariving Soon..!");
+	}
+}
+
+public class lambdaApp {
+	public static void main(String args[]) {
+		
+		cab cab = new uberX();
+		cab.bookCab();
+	}
+
+}

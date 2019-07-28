@@ -1,0 +1,12 @@
+package JavaLambda;
+
+interface cab{
+	void bookCab();
+}
+
+public class lambdaApp {
+	public static void main(String args[]) {
+		
+	}
+
+}

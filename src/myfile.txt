@@ -1,0 +1,5 @@
+hi 
+this program is for file handling 
+file handling done with filereader and bufferreader 
+and handle all these things in catch nd finally
+In finally how to  use again try catch block for the closing the file reader and buffer reader

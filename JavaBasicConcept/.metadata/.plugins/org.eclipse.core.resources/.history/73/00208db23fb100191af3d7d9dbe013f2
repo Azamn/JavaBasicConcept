@@ -1,8 +1,0 @@
-package JavaLambda;
-
-public class lmbdaMethodRefeences {
-	public static void main(String args[]) {
-		
-	}
-
-}

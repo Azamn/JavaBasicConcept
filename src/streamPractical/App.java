@@ -82,7 +82,12 @@ public class App {
 		System.out.println("\n"+ rowCount + " good rows.");
 		rows.close();
 		
-	
+		Stream<String> row = Files.lines(Paths.get("streamPractical/stockDatacsv.txt"));
+				row.map(x -> x.split(","))
+				.filter(x -> x.length > 3)
+				.filter(x -> Integer.parseInt(x[1].trim()) > 15)
+				.forEach(x -> System.out.println(x[0].trim()+ " " +x[2].trim()+" "+ x[3].trim()));
+		row.close();
 		
 	}
 
